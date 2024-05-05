@@ -330,14 +330,15 @@ footer .blur{
 }
 
 @media (width < 1000px){
+    nav {
+        gap: 3rem;
+    }
     .nav-links{
         gap: 3.5rem;
     }
-
     .btn a{
-        padding: 1rem 0.58rem;
+        padding: 1rem 0.7rem;
     }
-
     header{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -357,11 +358,14 @@ footer .blur{
     }
 }
 
-
-@media (width < 855px) {
+@media only screen and (max-width: 768px) {
     .nav-links{
         display: none;
     }
+    .btn a{
+        padding: 1rem 1rem;
+    }
+
     header{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -375,9 +379,8 @@ footer .blur{
         height:auto;
         grid-template-columns: 1fr 200px;
     }
-    footer .column p{
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
+    footer p{
+        display: none;
     }
     footer .column h4{
         margin-top: 0;
