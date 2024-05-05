@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Dark mode theme */
+.theme-switch {
+    display: flex;
+    position: relative; /* For positioning the label */
+}
+
+.theme-switch-input {
+    display: none;
+}
+
+.theme-switch-label {
+    background-color: #ddd;  
+    border-radius: 30px; 
+    padding: 5px 15px 5px 5px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: transform 0.3s; /* For smooth transition */
+    justify-content: flex-start;
+}
+
+.theme-switch-text {
+    margin-left: 15px;
+}
+
+/* Toggle button on state */
+.theme-switch-input:checked + .theme-switch-label .theme-switch-icon {
+    transform: translateX(20px); 
+}
+  
+.theme-switch-input:checked + .theme-switch-label {
+    background-color: #333; 
+}
+  
+.theme-switch-input:checked + .theme-switch-label .theme-switch-text {
+    color: #fff; 
+}
+  
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2f2e2e;
+    color: #eee;
+}
+
+.dark-mode .link a{
+    color: #fff;
+}
+
+.dark-mode .link a:hover{
+    color: #cab4ef;
+}
+
+.dark-mode .features .card:hover{
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.dark-mode footer{
+    background-color: #000;
+}
+
+.dark-mode footer .column > a:hover{
+    color:#cab4ef;
+}
+
+.dark-mode footer .column .socials a{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.dark-mode footer .column > a{
+    display: block;
+    margin-left: 20%;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.dark-mode .copyright{
+    background-color: #000;
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
