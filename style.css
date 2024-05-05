@@ -33,12 +33,12 @@ nav{
     gap: 5rem;
 }
 
-nav .nav-logo{
+.nav-logo{
     max-width: 100px;
     position:relative;
 }
 
-nav .nav-logo::before{
+.nav-logo::before{
     content: "L";
     position: absolute;
     transform: translateX(-12%) translateY(-37%);
