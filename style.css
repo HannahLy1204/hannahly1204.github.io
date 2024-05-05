@@ -33,9 +33,22 @@ nav{
     gap: 5rem;
 }
 
-.nav-logo{
+nav .nav-logo{
     max-width: 100px;
+    position:relative;
 }
+
+nav .nav-logo::before{
+    content: "L";
+    position: absolute;
+    transform: translateX(-12%) translateY(-37%);
+    font-size: 11rem;
+    font-weight: 400;
+    color: #9d1dd8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
 
 .nav-links{
     list-style: none;
@@ -65,8 +78,8 @@ nav{
     width:70%;
 }
 
-.btn {
-    padding: 1rem 2rem;
+.btn a{
+    padding: 1rem 1.5rem;
     font-size: 1rem;
     color: #fff;
     background-color:  #1e40af;
@@ -75,7 +88,7 @@ nav{
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn a:hover{
     background-color: #9e72ea;
     color: #000;
     font-weight:600;
@@ -298,6 +311,9 @@ footer .blur{
 
 /* Responsive code */
 @media (width < 1200px){
+    .nav-links{
+        gap: 6.5rem;
+    }
     header{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -313,12 +329,15 @@ footer .blur{
 
 }
 
-
-
 @media (width < 1000px){
     .nav-links{
-        display: none;
+        gap: 3.5rem;
     }
+
+    .btn a{
+        padding: 1rem 0.58rem;
+    }
+
     header{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -338,7 +357,11 @@ footer .blur{
     }
 }
 
-@media (width < 700px) {
+
+@media (width < 855px) {
+    .nav-links{
+        display: none;
+    }
     header{
         grid-template-columns: repeat(1, 1fr);
     }
