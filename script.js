@@ -1,8 +1,15 @@
 //Dark Mode
 const darkMode = document.getElementById("darkModeToggle")
+const themeDisplay = document.querySelector(".theme-switch-text")
 
 darkMode.addEventListener('click', () => {
     document.body.classList.toggle("dark-mode");
+
+    if (themeDisplay.textContent === 'Light') {
+        themeDisplay.textContent = 'Dark';
+    } else {
+        themeDisplay.textContent = 'Light';
+    }
 })
 
 //Scroll to element
