@@ -405,9 +405,15 @@ footer .blur{
     .nav-links{
         display: none;
     }
+    .nav-logo::before{
+        display: none;
+    }
+    .nav-logo::after{
+        display: none;
+    }
     .btn a{
-        font-size: 0.5rem;
-        padding: 0.5rem 0.5rem;
+        font-size: 0.2rem;
+        padding: 0.3rem 0.3rem;
     }
 
     header{
