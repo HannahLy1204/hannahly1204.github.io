@@ -401,7 +401,10 @@ footer .blur{
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 435px) {
+    .nav-links{
+        gap: 1rem;
+    }
     .nav-links{
         display: none;
     }
@@ -412,8 +415,9 @@ footer .blur{
         display: none;
     }
     .btn a{
-        font-size: 0.2rem;
-        padding: 0.3rem 0.3rem;
+        display: flex;
+        font-size: 0.8rem;
+        padding: 10px ;
     }
 
     header{
