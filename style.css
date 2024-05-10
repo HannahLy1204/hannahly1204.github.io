@@ -401,3 +401,35 @@ footer .blur{
     }
 }
 
+@media only screen and (max-width: 375px) {
+    .nav-links{
+        display: none;
+    }
+    .btn a{
+        font-size: 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image::before{
+        display: none;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        height:auto;
+        grid-template-columns: 1fr 200px;
+    }
+    footer p{
+        display: none;
+    }
+    footer .column h4{
+        margin-top: 0;
+    }
+    footer .column .socials{
+        display: none;
+    }
+}
